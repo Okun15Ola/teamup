@@ -14,9 +14,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --bg-primary-color: #2073d8;
+    --btn-primary-color: #8edf3a;
+    --green-text: #8edf3a;
+    --big-blue-text: #135cca;
+    --small-blue-text: #4572b1;
+    --small-faded-black: #9b9b9b;
+    --basic-text-color: #313131;
+    --h3-blue: #185aba;
+    }
 }
 
 body {

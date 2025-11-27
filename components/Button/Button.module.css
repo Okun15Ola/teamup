@@ -1,0 +1,49 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+  border-radius: 40px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: white;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  transition: 0.25s ease;
+
+  
+}
+.pillButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.md{
+    padding: 8px 14px;
+    font-size: 16px;
+}
+.icon {
+  font-size: 18px;
+  display: flex;
+  color: var(--green-text);
+}

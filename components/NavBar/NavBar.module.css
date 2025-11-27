@@ -1,0 +1,99 @@
+.header {
+  width: 100%;
+  background-color: var(--bg-primary-color);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 17px;
+}
+
+.navButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .nav{
+    padding: 0 20px;
+
+    }
+  .hamburger {
+    display: block;
+  }
+
+   .menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-primary-color);
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 20px 30px;
+    gap: 25px;
+
+    /* These 3 lines fix the gap */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+   .menuOpen {
+    max-height: 500px; /* enough for menu items */
+    opacity: 1;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

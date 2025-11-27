@@ -1,0 +1,17 @@
+.headingText{
+    color: var(--big-blue-text);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.subheadingText{
+    text-align: center;
+    color: var(--basic-text-color);
+}
+
+@media (max-width: 768px) {
+    .headingText{
+        font-size: 40px;
+    }
+    
+}

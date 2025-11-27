@@ -1,0 +1,38 @@
+.primaryButton {
+  width: 120px;
+  padding: 10px 0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: 0.2s ease;
+}
+
+.primary{
+    background: #7ed957; 
+    width: 120px;
+    padding: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: 0.2s ease;
+    }
+.secondary{
+    border: 1px solid white;
+    width: 100px;
+    padding: 10px 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: 0.2s ease;
+}
