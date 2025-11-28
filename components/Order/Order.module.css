@@ -1,0 +1,134 @@
+.container {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 0 1.5rem;
+  position: relative;
+  background-color: #fafbfc;
+}
+
+.headingText {
+  color: var(--big-blue-text);
+  font-size: 55px;
+  margin-bottom: 0.5rem;
+}
+
+.subheadingText {
+  color: var(--basic-text-color);
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.pathImg {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -60px;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem;
+  width: 330px;
+  min-height: 260px;
+  text-align: left;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  color: var(--big-blue-text);
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  color: var(--basic-text-color);
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 1.3rem;
+}
+
+.startBtn {
+  background: #4cd137;
+  border: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.startBtn:hover {
+  background: #43b72e;
+}
+
+@media (max-width: 900px) {
+
+  .headingText {
+    font-size: 42px;
+  }
+
+  .pathImg {
+    display: none;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+       justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    gap: 1.2rem;
+
+    padding-left: 0.2rem; 
+    padding-bottom: 1rem;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cardWrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .cardWrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+  }
+
+  .card:first-child {
+    margin-left: 0 !important; 
+  }
+}
+
+
+@media (max-width: 600px) {
+  .headingText {
+    font-size: 36px;
+  }
+}

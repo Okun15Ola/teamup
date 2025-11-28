@@ -32,7 +32,6 @@ const StudentStories = () => {
   return (
     <section className={styles.container}>
 
-      {/* TITLE */}
       <div className={styles.header}>
         <h1 className={styles.headingText}>Student Stories</h1>
         <p className={styles.subheadingText}>
@@ -40,10 +39,7 @@ const StudentStories = () => {
         </p>
       </div>
 
-      {/* MAIN BLUE BLOCK */}
       <div className={styles.blueBlock}>
-
-        {/* Testimonials */}
         <div className={styles.testimonialWrapper}>
           {testimonials.map((t, i) => (
             <div key={i} className={styles.card}>

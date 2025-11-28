@@ -3,6 +3,7 @@ import HeroSection from "@/components/hero/HeroSection";
 import OurServices from "@/components/OurServices/OurServices";
 import StudentStories from "@/components/StudentStories/StudentStories";
 import Image from "next/image";
+import Order from "@/components/Order/Order";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <OurServices />
       <AboutUs />
       <StudentStories />
+      <Order />
     </div>
   );
 }
