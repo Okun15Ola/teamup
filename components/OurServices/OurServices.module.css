@@ -1,3 +1,6 @@
+.container{
+    margin-bottom: 4rem;
+}
 .headingText{
     color: var(--big-blue-text);
     font-size: 60px;
@@ -8,10 +11,42 @@
     text-align: center;
     color: var(--basic-text-color);
 }
+.servicesSection {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.cardGrid {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+
+}
 
 @media (max-width: 768px) {
     .headingText{
         font-size: 40px;
     }
+
+    .cardGrid {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1.2rem;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: flex-start;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cardGrid > * {
+    flex: 0 0 75%;  
+    scroll-snap-align: center;
+  }
     
 }
