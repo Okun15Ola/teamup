@@ -1,0 +1,174 @@
+.container {
+  background-color: #fafbfc;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem 6rem;
+}
+
+.leftContent {
+  max-width: 480px;
+}
+
+.headingText {
+  color: var(--big-blue-text);
+  font-size: 56px;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--basic-text-color);
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.subHeading {
+  color: var(--big-blue-text);
+  font-size: 28px;
+  margin-top: 2rem;
+}
+
+.achievementList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.achievementList li {
+  font-size: 17px;
+  color: var(--basic-text-color);
+  line-height: 1.8;
+}
+
+.achievementList li span {
+  color: var(--big-blue-text);
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.imageGrid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.leftCol,
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bigImage,
+.mediumImage,
+.tallImage,
+.smallImages div {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.bigImage {
+  width: 430px;
+  height: 300px;
+}
+
+.mediumImage {
+  width: 430px;
+  height: 300px;
+}
+
+.tallImage {
+  width: 200px;
+  height: 300px;
+}
+
+.smallImages {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  gap: 1rem;
+}
+
+.smallImages div {
+  width: 200px;
+  height: calc((300px - 1rem) / 2);
+}
+
+.imageGrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .innerContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .imageGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bigImage,
+  .mediumImage {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .tallImage,
+  .smallImages div {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .smallImages {
+    height: auto;
+  }
+
+  .smallImages div {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headingText {
+    font-size: 38px;
+  }
+
+  .innerContainer {
+    padding: 2rem 1.5rem;
+  }
+
+  .bigImage,
+  .mediumImage,
+  .tallImage,
+  .smallImages div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .bigImage,
+  .mediumImage {
+    height: 220px;
+  }
+
+  .tallImage {
+    height: 220px;
+  }
+
+  .smallImages div {
+    height: 120px;
+  }
+}
