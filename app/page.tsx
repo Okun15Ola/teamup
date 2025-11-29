@@ -6,6 +6,9 @@ import TopSchools from "@/components/TopSchools/TopSchools";
 import Image from "next/image";
 import Order from "@/components/Order/Order";
 import Faq from "@/components/FAQ/Faq";
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
+
 
 export default function Home() {
   return (
@@ -17,6 +20,8 @@ export default function Home() {
       <Order />
       <TopSchools />
       <Faq />
+      <Contact />
+
     </div>
   );
 }

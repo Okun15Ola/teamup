@@ -1,0 +1,123 @@
+/* MAIN LAYOUT */
+.container {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 0 1.5rem;
+  background-color: #fafbfc;
+}
+
+.headingText {
+  color: var(--big-blue-text);
+  font-size: 55px;
+  margin-bottom: 0.5rem;
+}
+
+.subheadingText {
+  color: var(--basic-text-color);
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+/* FORM CARD */
+.formCard {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* FORM STRUCTURE */
+.form {
+  width: 100%;
+}
+
+.inputGroup {
+  text-align: left;
+  margin-bottom: 1.3rem;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.inputGroup label span {
+  color: red;
+}
+
+/* INPUT + TEXTAREA FIX */
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: var(--big-blue-text);
+  background: white;
+}
+
+/* TEXTAREA CUSTOM */
+.inputGroup textarea {
+  height: 110px;
+  resize: none;
+}
+
+/* BUTTON */
+.sendBtn {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  background: #4cd137;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.sendBtn:hover {
+  background: #43b72e;
+}
+
+/* CONTACT DETAILS */
+.contactDetails {
+  margin-top: 1.5rem;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .headingText {
+    font-size: 38px;
+  }
+
+  .formCard {
+    padding: 1.5rem;
+  }
+
+  .contactDetails {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

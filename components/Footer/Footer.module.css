@@ -1,0 +1,102 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #0068ff, #1d8eff);
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+  color: white;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* LEFT SIDE */
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.policyLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.policyLinks a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* CENTER NAV */
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navLinks a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+/* RIGHT SIDE */
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.socialIcons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.socialIcons img:hover {
+  opacity: 0.8;
+}
+
+.copy {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .right {
+    text-align: center;
+  }
+}
