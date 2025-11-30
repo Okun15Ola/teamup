@@ -1,6 +1,6 @@
 .hero{
     background-color: var(--bg-primary-color);
-    min-height: 100vh;
+    min-height: 100dvh;
     width: 100%;
 }
 .bigcontainer{

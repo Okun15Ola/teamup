@@ -1,6 +1,14 @@
 @import "tailwindcss";
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
 html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
 :root {
   --background: #ffffff;
