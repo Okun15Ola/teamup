@@ -27,7 +27,7 @@ const steps = [
 
 const Order = () => {
   return (
-    <section className={styles.container}>
+    <section id='order' className={styles.container}>
       
       <h1 className={styles.headingText}>How to Order</h1>
       <p className={styles.subheadingText}>

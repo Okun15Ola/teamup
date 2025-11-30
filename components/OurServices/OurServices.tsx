@@ -12,33 +12,33 @@ const services: {
 }[] = [
   {
     image: "./images/tution.webp",
-    title: "Tuition",
-    subtitle: "Personalized Learning Support",
+    title: "Research Projects",
+    subtitle: "Comprehensive guidance for detailed academic research",
     gradient: "blue",
   },
   {
     image: "./images/thesis.jpg",
-    title: "Thesis Report Writing",
-    subtitle: "Thesis & Dissertation Assistance",
+    title: "Term Papers",
+    subtitle: "High-quality, well-structured term paper writing support",
     gradient: "teal",
   },
   {
     image: "./images/career.jpg",
-    title: "Career Counseling",
-    subtitle: "Career Pathway Guidance",
+    title: "Data Analysis / SPSS",
+    subtitle: "Expert statistical analysis for academic research",
     gradient: "green",
   },
   {
     image: "./images/assignment.jpg",
-    title: "Assignment Completion",
-    subtitle: "Effortless Assignment Solutions",
+    title: "Assignments / PowerPoint",
+    subtitle: "Clean, clear, and professionally crafted presentations & tasks",
     gradient: "purple",
   }
 ];
 
 const OurServices = () => {
   return (
-    <section>
+    <section id='services'>
         <div className={styles.container}>
             <h1 className={styles.headingText}>Our Services</h1>
             <p className={styles.subheadingText}>Explore our wide range of services tailored to your unique needs</p>

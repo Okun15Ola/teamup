@@ -48,7 +48,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section id="faq" className={styles.container}>
       <h1 className={styles.headingText}>Frequently Asked Questions</h1>
 
       <p className={styles.subheadingText}>

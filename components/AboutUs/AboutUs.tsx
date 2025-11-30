@@ -4,7 +4,7 @@ import styles from './AboutUs.module.css'
 
 const AboutUs = () => {
   return (
-    <section className={styles.container}>
+    <section id='about' className={styles.container}>
       <div className={styles.innerContainer}>
 
         <div className={styles.leftContent}>

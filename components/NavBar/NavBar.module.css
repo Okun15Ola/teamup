@@ -7,8 +7,8 @@
   z-index: 1000;
 }
 
+/* NAV WRAPPER */
 .nav {
-
   max-width: 1400px;
   margin: 0 auto;
   height: 80px;
@@ -26,6 +26,7 @@
   font-size: 35px;
 }
 
+/* DESKTOP MENU */
 .menu {
   display: flex;
   align-items: center;
@@ -44,43 +45,49 @@
   gap: 20px;
 }
 
+/* HAMBURGER ICON */
 .hamburger {
   display: none;
   cursor: pointer;
 }
 
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
 @media (max-width: 900px) {
-    .nav{
+  .nav {
     padding: 0 20px;
+  }
 
-    }
   .hamburger {
     display: block;
   }
 
-   .menu {
+  /* Mobile menu hidden by default */
+  .menu {
     position: absolute;
     top: 80px;
     left: 0;
     width: 100%;
     background-color: var(--bg-primary-color);
-    
+
     flex-direction: column;
     align-items: flex-start;
-    
+
     padding: 20px 30px;
     gap: 25px;
 
-    /* These 3 lines fix the gap */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
 
     transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 1001;
   }
 
-   .menuOpen {
-    max-height: 500px; /* enough for menu items */
+  /* Mobile menu open */
+  .menuOpen {
+    max-height: 500px;
     opacity: 1;
   }
 
@@ -95,5 +102,20 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+
+  /* 🔥 Dark Overlay Behind Menu */
+  .overlay {
+    position: fixed;
+    top: 80px; /* below navbar */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+
+    z-index: 900;
+    transition: opacity 0.3s ease;
   }
 }

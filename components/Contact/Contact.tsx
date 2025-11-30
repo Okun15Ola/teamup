@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <section id="contact" className={styles.container}>
       <h1 className={styles.headingText}>Contact Us</h1>
 
       <p className={styles.subheadingText}>
@@ -84,8 +84,8 @@ const Contact = () => {
         </form>
 
         <div className={styles.contactDetails}>
-          <p>📞 +234 9023931025</p>
-          <p>📧 okunolaolubanjo@gmail.com</p>
+          <p>📞 +234 8140255294</p>
+          <p>📧 ogunyaleoluwabusayo@gmail.com</p>
         </div>
       </div>
     </section>

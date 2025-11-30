@@ -3,34 +3,35 @@ import styles from './StudentStories.module.css'
 
 const testimonials = [
   {
-    name: "Olivia Watson",
-    level: "CS • 4th year student",
-    text: "Fast, reliable, and exactly what I needed. The quality exceeded my expectation! I'll definitely use this service again.",
+    name: "Veronica Ogunyale",
+    level: "Registerd Nursing • 300 Level",
+    text: "Team-Up helped me finish my research project on time, and the explanation was so clear that I understood every part of it. I’m definitely using this service again!",
     img: "./images/womg.jpg"
   },
   {
-    name: "Olivia Watson",
-    level: "CS • 4th year student",
-    text: "Fast, reliable, and exactly what I needed. The quality exceeded my expectation! I'll definitely use this service again.",
+    name: "Nabi",
+    level: "Computer Science • 200 Level",
+    text: "Their assignment support is fast and very reliable. The PowerPoint they created for my presentation was clean, professional, and easy to defend.",
     img: "/images/student1.jpg"
   },
   {
-    name: "Olivia Watson",
-    level: "CS • 4th year student",
-    text: "Fast, reliable, and exactly what I needed. The quality exceeded my expectation! I'll definitely use this service again.",
-    img: "/images/student1.jpg"
+    name: "Emmanuel Musa",
+    level: "Nursing Science • Final Year",
+    text: "They handled my SPSS data analysis perfectly. The interpretation was detailed and accurate. I got great feedback from my supervisor!",
+    img: "/images/student2.jpg"
   },
   {
-    name: "Olivia Watson",
-    level: "CS • 4th year student",
-    text: "Fast, reliable, and exactly what I needed. The quality exceeded my expectation! I'll definitely use this service again.",
-    img: "/images/student1.jpg"
+    name: "Success Nairo",
+    level: "Public Health • 400 Level",
+    text: "I love how stress-free the whole process was. I submitted my term paper without any issues, and the originality was top-notch. Highly recommended!",
+    img: "/images/student3.jpg"
   }
-]
+];
+
 
 const StudentStories = () => {
   return (
-    <section className={styles.container}>
+    <section id='testimonial' className={styles.container}>
 
       <div className={styles.header}>
         <h1 className={styles.headingText}>Student Stories</h1>
