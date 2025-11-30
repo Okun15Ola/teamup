@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 export async function POST(req: Request) {
-  const resend = new Resend(process.env.RESEND_API_KEY); // ← MOVED HERE
-
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const { name, email, message } = await req.json();
 
     await resend.emails.send({
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("RESEND ERROR:", error);
-    return NextResponse.json({ success: false }, { status: 500 });
+    console.error("API ERROR:", error);
+    return NextResponse.json({ success: false, error }, { status: 500 });
   }
 }
