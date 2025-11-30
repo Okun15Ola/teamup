@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "Team-Up <onboarding@resend.dev>",
-      to: "ogunyaleoluwabusayo@gmail.com", // Your email to receive messages
+      to: "ogunyaleoluwabusayo@gmail.com",
       subject: `New Contact Message from ${name}`,
       html: `
         <h2>New Contact Message</h2>
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error("RESEND ERROR:", error);
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
