@@ -4,26 +4,25 @@ import styles from './Order.module.css';
 const steps = [
   {
     id: 1,
-    title: "Share your instructions",
-    text: "Fill out the order form and give clear instructions for your paper writer.",
+    title: "Send your instructions on WhatsApp",
+    text: "Click the button to message us on WhatsApp. Share your requirements and our team will guide you instantly.",
     btn: "Start Here",
-    icon: "/images/icon-mail.png"
+    link: "https://wa.me/2348140255294?text=Hi%20I%20want%20to%20place%20an%20order"
   },
   {
     id: 2,
-    title: "Confirm order details",
-    text: "Review all order details and pay for paper samples safely and easily.",
-    btn: null,
-    icon: "/images/icon-calculator.png"
+    title: "Confirm your order",
+    text: "We'll review your instructions together on WhatsApp and share the price. Once confirmed, you can complete a secure payment.",
+    btn: null
   },
   {
     id: 3,
-    title: "Get your paper",
-    text: "Download professionally written papers from expert writers, ready to submit.",
-    btn: null,
-    icon: "/images/icon-docs.png"
+    title: "Receive your completed paper",
+    text: "Your expert-written paper will be delivered on time, ready for download and submission.",
+    btn: null
   }
 ];
+
 
 const Order = () => {
   return (
@@ -40,7 +39,7 @@ const Order = () => {
         {steps.map(step => (
           <div className={styles.card} key={step.id}>
             
-            <img src={step.icon} alt="" className={styles.icon} />
+            {/* <img src={step.icon} alt="" className={styles.icon} /> */}
             
             <h3 className={styles.cardTitle}>
               {step.id}. {step.title}
@@ -48,9 +47,11 @@ const Order = () => {
 
             <p className={styles.cardText}>{step.text}</p>
 
-            {step.btn && (
+           {step.btn && (
+            <a href={step.link} target="_blank" rel="noopener noreferrer">
               <button className={styles.startBtn}>{step.btn}</button>
-            )}
+            </a>
+          )}
           </div>
         ))}
       </div>
