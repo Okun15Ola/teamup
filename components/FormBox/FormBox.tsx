@@ -83,18 +83,7 @@ Hello, I want help with my assignment:
             required
           />
 
-          <div className={styles.deadlineBox}>
-            <FiCalendar className={styles.icon} />
-
-            {/* The NEW datetime-local input */}
-            <input
-              type="datetime-local"
-              className={styles.deadlineInput}
-              value={deadline}
-              onChange={(e) => setDeadline(e.target.value)}
-              required
-            />
-          </div>
+          
         </div>
 
         <textarea
