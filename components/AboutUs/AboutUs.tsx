@@ -24,12 +24,12 @@ const AboutUs = () => {
             and confidence.
           </p>
 
-          <h2 className={styles.subHeading}>What we achieved so far</h2>
+          <h2 className={styles.subHeading}>Our Goals and Achievements</h2>
 
           <ul className={styles.achievementList}>
-            <li><span>✓</span> Helped 200+ students with their works</li>
-            <li><span>✓</span> Connected with 100+ verified experts</li>
-            <li><span>✓</span> Delivered 500+ successful projects</li>
+            <li><span>✓</span> To Assist students with their works</li>
+            <li><span>✓</span> To Connect with verified experts</li>
+            <li><span>✓</span> To Deliver successful projects</li>
           </ul>
 
           <SocialLinks />
